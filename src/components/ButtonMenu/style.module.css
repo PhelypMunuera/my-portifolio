@@ -1,0 +1,32 @@
+
+
+.btnBase{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    min-width: 100%;
+
+    font-size: 1rem;
+
+}
+
+.btnActive{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    min-width: 100%;
+
+    font-size: 1rem;
+  
+    background: linear-gradient(45deg, var(--purple-700), var( --grey-500));
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px var(--purple-600);
+}
+
+.contactsButonsul li button{
+        background-color: aqua;
+        padding: 1rem;
+    
+}

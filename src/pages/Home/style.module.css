@@ -1,0 +1,14 @@
+.container{
+    background: linear-gradient(-135deg, var(--background-000),var(--background-100)); 
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 1.125rem;
+
+    main{
+    border: solid 1px var(--grey-300);
+    border-radius: 1rem;
+    width: 100%;
+    }
+}
+

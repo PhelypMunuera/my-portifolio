@@ -10,7 +10,7 @@ import { IoArrowForwardSharp } from "react-icons/io5"
 import style from './style.module.css'
 import { useNavigate } from 'react-router-dom'
 
-export function Home() {
+export function Projects() {
     const navigate = useNavigate()
 return(
     <>

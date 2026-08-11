@@ -4,6 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaGithub, FaLinkedin, FaCloudDownloadAlt } from "react-icons/fa";
 import { FaUserAstronaut } from "react-icons/fa6";
 import { GoMail } from "react-icons/go";
+import curriculo from  '../../assets/avatar.png' //aqui tem que deixar meu curriculo
 
 import avatar from "../../assets/avatar.png";
 import { ButtonMenu } from "../ButtonMenu";
@@ -22,16 +23,16 @@ export function Navigation() {
       <nav>
         <ul>
           <li>
-            <ButtonMenu isActive={true}  icon={<IoHomeOutline />} text={'Início'} />
+            <ButtonMenu url={'/'} isActive={true}  icon={<IoHomeOutline />} text={'Início'} />
           </li>
           <li>
-            <ButtonMenu icon={<IoBriefcaseOutline />} text={'Projetos'} />
+            <ButtonMenu url={'/projetos'} icon={<IoBriefcaseOutline />} text={'Projetos'} />
           </li>
           <li>
-            <ButtonMenu icon={<FaUserAstronaut />} text={'Sobre Mim'} />
+            <ButtonMenu url={'/sobre-mim'}icon={<FaUserAstronaut />} text={'Sobre Mim'} />
           </li>
           <li>
-            <ButtonMenu icon={<GoMail />} text={'Contato'} />
+            <ButtonMenu url={'/contatos'}icon={<GoMail />} text={'Contato'} />
           </li>
         </ul>
       </nav>
@@ -39,25 +40,33 @@ export function Navigation() {
         <span>CONECTE-SE</span>
         <ul>
           <li>
-            <button>
-              <FaLinkedin />
-            </button>
+            <a href="https://www.linkedin.com/in/phelypmunuera/"  target="_blank" rel="noopener noreferrer">
+              <button>
+                <FaLinkedin />
+              </button>
+            </a>
           </li>
           <li>
-            <button>
-              <FaGithub />
-            </button>
+            <a href="https://github.com/PhelypMunuera"  target="_blank" rel="noopener noreferrer">
+              <button>
+                <FaGithub />
+              </button>
+            </a>
           </li>
 
           <li>
-            <button>
-              <AiFillInstagram />
-            </button>
+            <a href="https://www.instagram.com/phemunuera/"  target="_blank" rel="noopener noreferrer">
+              <button>
+                <AiFillInstagram />
+              </button>
+            </a>
           </li>
           <li>
-            <button>
-              <FaCloudDownloadAlt />
-            </button>
+            <a href={curriculo} download>
+              <button>
+                <FaCloudDownloadAlt />
+              </button>
+            </a>
           </li>
         </ul>
       </nav>

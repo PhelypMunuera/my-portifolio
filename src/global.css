@@ -9,31 +9,29 @@
 
   /* TEXTOS */
   --texto-000: #F7F5FC;
-  --texto-100: #A8A3B5;
+ 
   --texto-200: #747080;
   --texto-300: #555263;
 
   /* BOTÕES */
   --botao-000: #7037CB;
   --botao-100: #763AC1;
-  --botao-200: #9359E7;
-  --botao-300: #C85CED;
+  
   --botao-400: #FFFFFF;
-
+  
   /* CARDS */
   --card-000: #15122C;
   --card-100: #211B3B;
   --card-200: #231F46;
-
+  
   /* LINHAS E BORDAS */
   --linha-000: #29204F;
   --linha-100: #35295E;
   --linha-200: #49337A;
-
-  /* DESTAQUES ROXOS */
-  --destaque-000: #5D2CA0;
   
-  --destaque-200: #A855F7;
+  /* DESTAQUES ROXOS */
+  
+
 
   /* ESTADOS E INDICADORES */
   --status-000: #22C55E;
@@ -51,21 +49,35 @@
    /* MENU */
   --background-000: #030a12;
   --background-100: #0e0b1c;
+  --background-200 : rgba(14, 11, 28, 0.3);
+  --background-240 : rgba(14, 11, 28, 0.4);
   --background-300: #040a18
-  
-  --grey-100: rgba(255, 255, 255, 0.1);
-  --grey-300: rgba(255, 255, 255, 0.3);
-  --grey-500: #18212d;
 
+
+  --grey-100: rgba(255, 255, 255, 0.1);
+  --grey-150: rgba(255, 255, 255, 0.2);
+  --grey-200: #A8A3B5;
+  --grey-500: #18212d;
+  --grey-300: rgba(255, 255, 255, 0.3);
+
+
+
+  --pink-200: #C85CED;
+  --pink-300: #A855F7;
+
+  --purple-200: #9359E7;
   --purple-500: #8B5CF6;
+  --purple-550: #5D2CA0;
   --purple-600: rgba(73, 51, 122, 0.3);
   --purple-700: #3e2960;
 }
 
 body {
+  background: linear-gradient(-135deg, var(--background-000),var(--background-100));
   font-family: "Montserrat", sans-serif;
   color: var(--texto-000);
   font-size: 1rem;
+  padding: 1.125rem;
 }
 
 button{

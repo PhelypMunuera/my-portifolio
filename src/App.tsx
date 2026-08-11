@@ -1,14 +1,10 @@
 import './global.css'
-import { Home } from './pages/Home'
+import { Layout } from './pages/Layout'
 
 export function App() {
 
   return (
-    <>
-      <section >
-        <Home/>
-      </section>
-    </>
+      <Layout/>
   )
 }
 

@@ -51,7 +51,8 @@
   --background-100: #0e0b1c;
   --background-200 : rgba(14, 11, 28, 0.3);
   --background-240 : rgba(14, 11, 28, 0.4);
-  --background-300: #040a18
+  --background-300: #040a18;
+  --background-400: #141940bd;
 
 
   --grey-100: rgba(255, 255, 255, 0.1);

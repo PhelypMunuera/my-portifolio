@@ -8,6 +8,11 @@ import iconJs from '../../assets/iconJs.png'
 import iconMarks from '../../assets/iconMarks.png'
 import iconPlanet from '../../assets/iconPlanet.png'
 
+import iconSql from '../../assets/iconSql.png'
+import iconApi from '../../assets/iconApi.png'
+import iconGit from '../../assets/iconGit.png'
+import iconMaps from '../../assets/iconMaps.png'
+
 
 import { IoArrowForward } from "react-icons/io5";
 import { BsCloudArrowDownFill } from "react-icons/bs";
@@ -18,9 +23,14 @@ import imgAcord from '../../assets/imgProjetoAcord.png'
 
 import style from './style.module.css'
 import { PreviewProject } from '../../components/Preview-project'
+import { useNavigate } from 'react-router-dom'
 
 
 export function AbaoutMe() {
+
+
+    const navigate = useNavigate()
+
 
     return (
         <>
@@ -87,6 +97,22 @@ export function AbaoutMe() {
                                     <img src={iconReact} alt="" />
                                     <span>React</span>
                                 </div>
+                                <div>
+                                    <img src={iconSql} alt="" />
+                                    <span> Banco SQL</span>
+                                </div>
+                                <div>
+                                    <img src={iconApi} alt="" />
+                                    <span>API</span>
+                                </div>
+                                <div>
+                                    <img src={iconGit} alt="" />
+                                    <span>GitHub</span>
+                                </div>
+                                <div>
+                                    <img src={iconMaps} alt="" />
+                                    <span>API Google</span>
+                                </div>
 
 
                             </div>
@@ -126,11 +152,13 @@ export function AbaoutMe() {
 
                                 </div>
 
-                                <div>
-                                    <button>
-                                        Ver todos os projetos
-                                        <IoArrowForward />
-                                    </button>
+                                <div className={style.containerButtonAllprojects}>
+
+                                        <button onClick={() => navigate('/projetos')} >
+                                            Ver todos os projetos
+                                            <IoArrowForward />
+                                        </button>
+
                                 </div>
                             </div>
                         </div>

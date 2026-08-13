@@ -9,7 +9,7 @@
     border-radius: .5rem;
     img {
         border-radius: .5rem;
-        width: 12.5rem;
+        width: 10rem;
     }
     h1 {
         font-size: 1rem;
@@ -26,7 +26,7 @@
         justify-content: space-between;
         gap: .5rem;
         align-items: flex-end
-    }
+    } 
 
     a {
         text-decoration: none;

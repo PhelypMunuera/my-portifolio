@@ -1,5 +1,7 @@
 .container {
     display: flex;
+
+    justify-content: space-between;
     gap: 3rem;
     padding: 1.5rem;
   
@@ -9,6 +11,7 @@
     border-radius: 20px;
     position: relative;
   
+    margin-bottom: 1.5rem;
     z-index: 1;
   
     img {
@@ -78,11 +81,15 @@
 
     img {
         border-radius: 1rem;
+        max-width: 500px;
     }
+
+
 }
 .containerDescription { 
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1rem;
 }
 
@@ -109,8 +116,9 @@
 } 
 
 .containerDescription {
-    max-width: 500px;
+    max-width: 600px;
     p {
+      font-size: 20px;
         color: rgb(194, 194, 194);
     }
 }

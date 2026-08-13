@@ -1,9 +1,3 @@
-// import iconHtml from '../../assets/iconHtml.png'
-// import iconCss from '../../assets/iconCss.png'
-// import iconGIt from '../../assets/iconGIt.png'
-// import iconReact from '../../assets/iconReact.png'
-// import iconTs from '../../assets/iconTs.png'
-// import iconJs from '../../assets/iconJs.png'
 import { LuSquareArrowOutUpRight } from "react-icons/lu";
 import style from './style.module.css'
 import type { ReactElement } from "react"
@@ -14,9 +8,10 @@ type ProjectProps = {
     title: string,
     description: string,
     when: string,
+    href: string,
     technology?: ReactElement
 }
-export function Project({image, descriptionImg, title, description, when, technology}:ProjectProps ) {
+export function Project({image, descriptionImg, title, description, when, href, technology}:ProjectProps ) {
     return(
         <>
         <div className={style.container}>
@@ -30,7 +25,7 @@ export function Project({image, descriptionImg, title, description, when, techno
                 <p>{description}</p>
                 <div>{technology}</div>
             </div>
-        <a className={style.btnViewInGit} href="">
+        <a className={style.btnViewInGit} href={href} target="_blank" rel="noopener noreferrer">
             <button>
                 <LuSquareArrowOutUpRight />
             </button>

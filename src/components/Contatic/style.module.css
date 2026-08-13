@@ -1,0 +1,51 @@
+.backgroundContatc {
+    background: linear-gradient( 90deg, var(--purple-600), var(--blue-530));
+    backdrop-filter: blur(10px);
+    border: solid 1px var(--grey-100);
+    border-radius: .6rem;
+
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.logoContact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background: linear-gradient( 135deg, var(--pink-50), var(--blue-530));
+
+    padding: .75rem;
+    border: solid 1px var(--grey-150);
+    border-radius: .4rem;
+    font-size: 1.5rem;
+}
+
+.textContent {
+    h1 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    span {
+        font-size: .75rem;
+        font-weight: 200;
+    }
+}
+
+.copyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-100);
+    backdrop-filter: blur(10px);
+    padding: .75rem;
+    border: solid 1px var(--grey-150);
+    border-radius: .4rem;
+    font-size: .75rem;
+}
+

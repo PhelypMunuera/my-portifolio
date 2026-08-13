@@ -11,7 +11,11 @@ import { ButtonMenu } from "../ButtonMenu";
 
 import style from './style.module.css'
 
+import { useLocation } from 'react-router-dom'
+
 export function Navigation() {
+
+  const { pathname } = useLocation()
 
   return (
     <section className={style.container}>
@@ -23,16 +27,16 @@ export function Navigation() {
       <nav>
         <ul>
           <li>
-            <ButtonMenu url={'/'} isActive={true}  icon={<IoHomeOutline />} text={'Início'} />
+            <ButtonMenu url={'/'} isActive={pathname ==='/'}  icon={<IoHomeOutline />} text={'Início'} />
           </li>
           <li>
-            <ButtonMenu url={'/projetos'} icon={<IoBriefcaseOutline />} text={'Projetos'} />
+            <ButtonMenu url={'/projetos'}  isActive={pathname ==='/projetos'} icon={<IoBriefcaseOutline />} text={'Projetos'} />
           </li>
           <li>
-            <ButtonMenu url={'/sobre-mim'}icon={<FaUserAstronaut />} text={'Sobre Mim'} />
+            <ButtonMenu url={'/sobre-mim'}  isActive={pathname ==='/sobre-mim'}  icon={<FaUserAstronaut />} text={'Sobre Mim'} />
           </li>
           <li>
-            <ButtonMenu url={'/contatos'}icon={<GoMail />} text={'Contato'} />
+            <ButtonMenu url={'/contatos'}  isActive={pathname ==='/contatos'}  icon={<GoMail />} text={'Contato'} />
           </li>
         </ul>
       </nav>

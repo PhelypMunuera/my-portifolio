@@ -1,0 +1,226 @@
+
+.containerAbouteMe {
+    background-image: url('../../assets/backgroundHome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    flex: 1 ;
+    padding: 4rem;
+    border-radius: 0 1rem  1rem 0;
+  }
+  
+  .containerProfile {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .containerApresentation {
+    max-width: 637.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+ 
+    }
+  
+    h1{
+      font-size: 3rem;
+       font-weight: 800;
+      Strong{
+         font-weight: 800;
+         background: var(--pink-300);
+         background-clip: text;
+         -webkit-background-clip: text;
+         color: transparent;
+         -webkit-text-fill-color: transparent
+      }
+    }
+
+    .divLine{
+        width: 25%;
+        height: 2px;
+        background:  var(--pink-200) 
+    }
+  
+    .myPurpose {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+            p  {
+            font-size: 1rem;
+            font-weight: 300
+            }
+  }
+
+.btnDownloadCurriculo {
+  display: flex;
+  gap: 1rem; 
+  font-weight: 200;
+  padding: .5rem 3rem; 
+  border-radius: .5rem;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(var(--purple-700), var(--purple-700)) padding-box,
+    linear-gradient(
+      135deg,
+      var(--purple-600) 0%,
+      var(--grey-300) 50%,
+      var(--pink-200) 100%
+    ) border-box;
+
+  box-shadow:
+    0 0 20px rgba(200, 92, 237, 0.15),
+    inset 0 0 20px rgba(200, 92, 237, 0.04);
+
+  transition:
+    transform .2s ease .1s,
+    box-shadow .2s ease .1s;
+}
+
+.btnDownloadCurriculo:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 30px rgba(200, 92, 237, 0.4),
+    inset 0 0 20px rgba(200, 92, 237, 0.08);
+}
+
+  
+.articleAbouteMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+
+    padding: 1.5rem;  
+    border-radius: .5rem;
+    border: solid 2px var(--grey-300);
+    background-color: var( --background-200);
+    backdrop-filter: blur(30px);
+
+ 
+
+}
+  .iconMarkes{
+    img {
+      width: 1.25rem;
+    }
+  }
+  .tecDescription {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+   }
+
+   .myDeclaration{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  
+      
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      p{
+        font-size: 1rem;
+        font-style: italic;
+      }
+      span {
+        font-size: .75rem;
+        color: var(--purple-500) ;
+        
+      }
+    }  
+  }
+  
+  .imgPlanet {
+    width: 5.625rem;
+  }
+
+
+
+
+
+
+  .tecIcon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    padding: 1.5rem 0;
+    border-top: solid 1px var(--grey-300);
+    border-bottom: solid 1px var(--grey-300);
+  
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+      align-items: center;
+      gap: .5rem;
+      
+      background-color: var(--background-250);
+      border: solid 1px var(--grey-300) ;
+      border-radius: .5rem;
+      padding: 1rem;
+      backdrop-filter: blur(50px);
+  
+      img{
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+  
+      span{
+      font-size: .75rem;
+    }
+    }
+  }
+  
+
+  .destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    
+    .destaqueTitle {
+        display: flex;
+        justify-content: space-between;
+        gap: .5rem;
+        span {
+            color: var(--purple-100);
+            font-size: 0.625rem;
+            font-weight: 400;
+        }
+        p {
+            color: var();
+            font-size: 1.125rem;
+            font-weight: 500;
+        }
+        img{
+            width: 1.25rem;
+            height: 1.25rem;
+        }
+        
+}
+
+.previewProject {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .75rem;
+ 
+
+}
+
+button {
+    color: var(--purple-100);
+}
+
+}

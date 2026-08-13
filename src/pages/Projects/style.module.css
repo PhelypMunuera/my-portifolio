@@ -26,13 +26,13 @@
   }
 
   .containerApresentation {
-    max-width: 450px;
+    max-width: 28.125rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
   
     h1{
-      font-size: 48px;
+      font-size: 3rem;
        font-weight: 800;
       Strong{
          font-weight: 800;
@@ -45,7 +45,7 @@
     }
   
     h2{
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 400;
       color: var(--grey-200);
     } 
@@ -53,7 +53,7 @@
   .containerTechnology{
     display: flex;
     flex-wrap: wrap;
-    max-width: 450px;
+    max-width: 28.125rem;
     gap: 1rem;
   }
 

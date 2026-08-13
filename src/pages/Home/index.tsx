@@ -33,7 +33,7 @@ return(
                 <IoArrowForwardSharp />
             </button>
         </section>
-        <article>
+        <article className={style.articleHome}>
             <div className={style.tecDescription}>
                 <div className={style.codeIcon}>
                     <img src={codeIcon} alt="Icone de Codigo" />

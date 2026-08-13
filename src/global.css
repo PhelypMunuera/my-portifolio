@@ -51,7 +51,8 @@
   --background-100: #0e0b1c;
   --background-200 : rgba(14, 11, 28, 0.3);
   --background-240 : rgba(14, 11, 28, 0.4);
-  --background-300: #040a18
+  --background-300: #040a18;
+  --background-400: #141940bd;
 
 
   --grey-100: rgba(255, 255, 255, 0.1);
@@ -62,14 +63,17 @@
 
 
 
+  --pink-100: rgba(201, 92, 237, 0.4);
   --pink-200: #C85CED;
   --pink-300: #A855F7;
 
+  --purple-100: #7e55b6;
   --purple-200: #9359E7;
   --purple-500: #8B5CF6;
   --purple-550: #5D2CA0;
   --purple-600: rgba(73, 51, 122, 0.3);
   --purple-700: #3e2960;
+  --purple-800: rgba(20, 9, 43, 0.562);
 }
 
 body {

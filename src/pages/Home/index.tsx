@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom'
 
 export function Home() {
     const navigate = useNavigate()
-return(
+return( 
     <>
     <section className={style.container}>
        <div className={style.containerProfile}>
@@ -33,7 +33,7 @@ return(
                 <IoArrowForwardSharp />
             </button>
         </section>
-        <article>
+        <article className={style.articleHome}>
             <div className={style.tecDescription}>
                 <div className={style.codeIcon}>
                     <img src={codeIcon} alt="Icone de Codigo" />

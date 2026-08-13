@@ -1,93 +1,127 @@
-import iconHtml from '../../assets/iconHtml.png'
-import iconCss from '../../assets/iconCss.png'
-import iconGIt from '../../assets/iconGIt.png'
+import { Project } from '../../components/Project'
+import style from './style.module.css'
 import iconReact from '../../assets/iconReact.png'
+import iconCss from '../../assets/iconCss.png'
+import iconHtml from '../../assets/iconHtml.png'
 import iconTs from '../../assets/iconTs.png'
 import iconJs from '../../assets/iconJs.png'
-import codeIcon from '../../assets/codeIcon.png'
-import { IoArrowForwardSharp } from "react-icons/io5"
+import iconSql from '../../assets/iconSql.png'
+import iconApi from '../../assets/iconApi.png'
+import iconGit from '../../assets/iconGit.png'
+import iconMaps from '../../assets/iconMaps.png'
 
-import style from './style.module.css'
-import { useNavigate } from 'react-router-dom'
+import imgProjetoCapio from '../../assets/imgProjetoCapio.png'
+import imgProjetoAurrum from '../../assets/imgProjetoAurrum.png'
+import imgProjetoFlashcard from '../../assets/imgProjetoFlashcard.png'
+import imgProjetoPomodoro from '../../assets/imgProjetoPomodoro.png'
+import imgProjetoAcord from '../../assets/imgProjetoAcord.png'
+
+import { Technology } from '../../components/Technology'
 
 export function Projects() {
-    const navigate = useNavigate()
-return(
-    <>
-    <section className={style.container}>
-       <div className={style.containerProfile}>
-        <section className={style.containerApresentation} >
-            <span>
-                Olá, eu sou 👋
-            </span>
-            <h1>Phelyp <strong>Munuera</strong></h1>
-            <h2>Desenvovedor Front-end</h2>
-            <div className={style.divLine}></div>
-            <div className={style.myPurpose}>
-                <p>Transformando ideias em soluções através da tecnologia.</p>
-                <p>Especialista em criar experiências digitais eficientes, modernas e intuitivas que geram resultados de impacto e fazem a diferença.</p>
-            </div>
-                           
-            <button onClick={() => navigate('/projetos')} className={style.btnProjects}>
-                Veja meus projetos
-                <IoArrowForwardSharp />
-            </button>
-        </section>
-        <article>
-            <div className={style.tecDescription}>
-                <div className={style.codeIcon}>
-                    <img src={codeIcon} alt="Icone de Codigo" />
-                    <div>
-                        <strong>Desenvolvimento Front-end</strong>
-                        <p>Aplicações modernas, performáticas e escaláveis com as melhores tecnologias.</p>
-                    </div>
-                </div>       
-                <div className={style.tecIcon}>
-                    <div>
-                        <img src={iconHtml} alt="" />
-                        <span>HTML5</span>
-                    </div>
-                   
-                    <div>
-                        <img src={iconJs } alt="" />
-                        <span>JavaScript</span>
-                    </div>
-                    <div>
-                        <img src={iconGIt} alt="" />
-                        <span>GitHub</span>
-                    </div>
-                    <div>
-                        <img src={iconCss} alt="" />
-                        <span>CSS3</span>
-                    </div>
-                    <div>
-                        <img src={iconTs} alt="" />
-                        <span>TypeScript</span>
-                    </div>
-                    <div>
-                        <img src={iconReact} alt="" />
-                        <span>React</span>
-                    </div>
-           
+
+    return (
+        <>
+            <section className={style.container}>
+                <div className={style.containerProfile}>
+                    <section className={style.containerApresentation} >
+                        <h1>Meus <strong>Projetos</strong></h1>
+                        <h2>Confira alguns projetos que desenvolvi</h2>
+                    </section>
+                    <section className={style.containerProjects}>
+                        <Project
+                            image={imgProjetoCapio}
+                            href={'https://github.com/PhelypMunuera/capio'}
+                            descriptionImg={'Imagem ilustrativa do programa'}
+                            title={'Sitema CAPIO'}
+                            when={'Agosto 26'}
+                            description={`Sistema de cadastro de pacientes implantado na Secretaria 
+                                        de Saúde de São Sebastião, desenvolvido para organizar e 
+                                        agilizar o atendimento, centralizar informações e padronizar
+                                        o registro dos usuários da rede municipal de saúde.`}
+                            technology={
+                                <div className={style.containerTechnology}>
+                                    <Technology image={iconCss} descriptionImg={'logo do React Js'} technology={'CSS'} />
+                                    <Technology image={iconReact} descriptionImg={'logo do React Js'} technology={'React'} />
+                                    <Technology image={iconJs} descriptionImg={'logo do React Js'} technology={'javaScript'} />
+                                    <Technology image={iconTs} descriptionImg={'logo do React Js'} technology={'TypeScript'} />
+                                    <Technology image={iconSql} descriptionImg={'logo do React Js'} technology={'SQL'} />
+                                    <Technology image={iconApi} descriptionImg={'logo do React Js'} technology={'API'} />
+                                </div>
+                            }
+                        />
+                        <Project
+                            image={imgProjetoFlashcard}
+                            href={'https://github.com/PhelypMunuera/flash-flow'}
+                            descriptionImg={'FlashFlow'}
+                            title={'FlashFlow'}
+                            when={'Julho 26'}
+                            description={`Aplicação desenvolvida para criar, organizar e revisar flashcards, facilitando o aprendizado 
+                                e a memorização de conceitos relacionados à programação.`}
+                            technology={
+                                <div className={style.containerTechnology}>
+                                    <Technology image={iconHtml} descriptionImg={'logo do React Js'} technology={'HTML'} />
+                                    <Technology image={iconCss} descriptionImg={'logo do React Js'} technology={'CSS'} />
+                                    <Technology image={iconJs} descriptionImg={'logo do React Js'} technology={'javaScript'} />
+                                    <Technology image={iconReact} descriptionImg={'logo do React Js'} technology={'React'} />
+                                    <Technology image={iconGit} descriptionImg={'logo do React Js'} technology={'GitHube'} />
+                                    <Technology image={iconTs} descriptionImg={'logo do React Js'} technology={'TypeScript'} />
+                                </div>
+                            }
+                        />
+                        <Project
+                            image={imgProjetoAurrum}
+                            href={'https://github.com/PhelypMunuera/aurum'}
+                            descriptionImg={'Imagem generica'}
+                            title={'Aurum'}
+                            when={'Junho 26'}
+                            description={`Desenvolvimento do front-end de um e-commerce de relógios, com foco em uma experiência de compra moderna, responsiva e intuitiva.`}
+                            technology={
+                                <div className={style.containerTechnology}>
+                                    <Technology image={iconHtml} descriptionImg={'logo do React Js'} technology={'HTML'} />
+                                    <Technology image={iconCss} descriptionImg={'logo do React Js'} technology={'CSS'} />
+                                    <Technology image={iconJs} descriptionImg={'logo do React Js'} technology={'javaScript'} />
+                                    <Technology image={iconGit} descriptionImg={'logo do React Js'} technology={'GitHube'} />   
+                                </div>
+                            }
+                        />
+                           <Project
+                            image={imgProjetoPomodoro}
+                            href={'https://github.com/PhelypMunuera/pomodoro'}
+                            descriptionImg={'Pomodoro'}
+                            title={'Pomodoro'}
+                            when={'Março 26'}
+                            description={`Timer desenvolvido inteiramente em JavaScript puro, criado para auxiliar na produtividade e no gerenciamento do tempo, permitindo organizar períodos de foco e descanso de forma simples e eficiente.`}
+                            technology={
+                                <div className={style.containerTechnology}>
+                                    <Technology image={iconHtml} descriptionImg={'logo do React Js'} technology={'HTML'} />
+                                    <Technology image={iconCss} descriptionImg={'logo do React Js'} technology={'CSS'} />
+                                    <Technology image={iconJs} descriptionImg={'logo do React Js'} technology={'javaScript'} />
+                                    <Technology image={iconGit} descriptionImg={'logo do React Js'} technology={'GitHube'} />   
+                                </div>
+                            }
+                        />
+                        <Project
+                            image={imgProjetoAcord}
+                            href={'https://github.com/PhelypMunuera/aplicativo-acord-mobile'}
+                            descriptionImg={'Imagem generica'}
+                            title={'Acord'}
+                            when={'Janeiro 26'}
+                            description={`Aplicativo proprio em produção para ajudar pessoas no dia a dia, a aplicação usa geo referenciamento em tempo real para despertar e avisar o ususario o hora dele desembarcar `}
+                            technology={
+                                <div className={style.containerTechnology}>
+                                    <Technology image={iconMaps} descriptionImg={'logo do React Js'} technology={'API Google' } />
+                                    <Technology image={iconReact} descriptionImg={'logo do React Js'} technology={'React Native'} />
+                                    <Technology image={iconCss} descriptionImg={'logo do React Js'} technology={'CSS'} />
+                                    <Technology image={iconJs} descriptionImg={'logo do React Js'} technology={'javaScript'} />
+                                    <Technology image={iconTs} descriptionImg={'logo do React Js'} technology={'TypeScript'} />
+                                </div>
+                            }
+                        />
+                    </section>
+
                 </div>
-                <div className={style.buletPoints}>
-                    <div>
-                        <span>2+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div>
-                        <span>10+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div>
-                        <span>5+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                </div>
-            </div>
-        </article>
-        
-       </div>
-    </section>
-    </>
-)}
+            </section>
+        </>
+    )
+} 

@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    max-width: fit-content;
+    gap: .75rem;
+    background-color: var(--grey-100);
+    border: solid 1px var(--grey-150);
+    border-radius: .5rem;
+    img{
+        width: 1.5rem;
+    }
+}

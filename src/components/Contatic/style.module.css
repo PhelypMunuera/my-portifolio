@@ -37,7 +37,7 @@
     }
 }
 
-.copyContainer {
+.openContatic {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,5 +47,12 @@
     border: solid 1px var(--grey-150);
     border-radius: .4rem;
     font-size: .75rem;
+    transition: all 0.2s;
 }
 
+.openContatic:hover {
+    background-color: var(--grey-150);
+    box-shadow:
+    0 0 20px var(--pink-50),
+    inset 0 0 20px var(--grey-150);
+}

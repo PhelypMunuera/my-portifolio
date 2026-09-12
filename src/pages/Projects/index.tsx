@@ -34,7 +34,7 @@ export function Projects() {
                             href={'https://github.com/PhelypMunuera/capio'}
                             descriptionImg={'Imagem ilustrativa do programa'}
                             title={'Sitema CAPIO'}
-                            when={'Agosto 26'}
+                            when={'em desenvolvimento'}
                             description={`Sistema de cadastro de pacientes implantado na Secretaria 
                                         de Saúde de São Sebastião, desenvolvido para organizar e 
                                         agilizar o atendimento, centralizar informações e padronizar

@@ -82,12 +82,40 @@
 
 .btnProjects {
   display: flex;
-  justify-content: center;
-  gap: .5rem;
-  background: linear-gradient(45deg, var(--purple-500),var(--pink-300));
   width: fit-content;
-  padding: .5rem 1.5rem;
-  border-radius: .7rem;
+  gap: 1rem; 
+  font-weight: 200;
+  padding: .5rem 3rem; 
+  border-radius: .5rem;
+  text-decoration: none;
+
+  border: 1px solid transparent;
+
+  background:
+    linear-gradient(var(--purple-700), var(--purple-700)) padding-box,
+    linear-gradient(
+      135deg,
+      var(--purple-600) 0%,
+      var(--grey-300) 50%,
+      var(--pink-200) 100%
+    ) border-box;
+
+  box-shadow:
+    0 0 20px rgba(200, 92, 237, 0.15),
+    inset 0 0 20px rgba(200, 92, 237, 0.04);
+
+  transition:
+    transform .2s ease .1s,
+    box-shadow .2s ease .1s;
+}
+
+.btnProjects:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 0 30px rgba(200, 92, 237, 0.4),
+    inset 0 0 20px rgba(200, 92, 237, 0.08);
+
 }
 .articleHome {
   display: flex;

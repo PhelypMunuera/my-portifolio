@@ -23,13 +23,11 @@ import imgAcord from '../../assets/imgProjetoAcord.png'
 
 import style from './style.module.css'
 import { PreviewProject } from '../../components/Preview-project'
-import { useNavigate } from 'react-router-dom'
+
 
 
 export function AbaoutMe() {
 
-
-    const navigate = useNavigate()
 
 
     return (
@@ -47,7 +45,7 @@ export function AbaoutMe() {
                         </div>
                         <a href="">
                             <button className={style.btnDownloadCurriculo} >
-                                Baixar Curriculo
+                            Baixe meu curriculo aqui
                                 <BsCloudArrowDownFill />
                             </button>
                         </a>
@@ -154,7 +152,7 @@ export function AbaoutMe() {
 
                                 <div className={style.containerButtonAllprojects}>
 
-                                        <button onClick={() => navigate('/projetos')} >
+                                        <button onClick={() =>  window.open("https://github.com/PhelypMunuera?tab=repositories",  "_blank")} >
                                             Ver todos os projetos
                                             <IoArrowForward />
                                         </button>

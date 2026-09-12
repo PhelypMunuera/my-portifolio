@@ -24,12 +24,12 @@ return(
             <h2>Desenvovedor Front-end</h2>
             <div className={style.divLine}></div>
             <div className={style.myPurpose}>
-                <p>Transformando ideias em soluções através da tecnologia.</p>
-                <p>Especialista em criar experiências digitais eficientes, modernas e intuitivas que geram resultados de impacto e fazem a diferença.</p>
+                <p>Desenvolvendo interfaces que unem tecnologia, experiência e propósito.</p>
+                <p>Desenvolvedor Front-end focado em React e TypeScript, criando interfaces modernas, responsivas e intuitivas. Busco transformar boas ideias em experiências digitais bem construídas e continuar evoluindo através de desafios reais.</p>
             </div>
                            
             <button onClick={() => navigate('/projetos')} className={style.btnProjects}>
-                Veja meus projetos
+            Conheça meus projetos
                 <IoArrowForwardSharp />
             </button>
         </section>
@@ -39,7 +39,7 @@ return(
                     <img src={codeIcon} alt="Icone de Codigo" />
                     <div>
                         <strong>Desenvolvimento Front-end</strong>
-                        <p>Aplicações modernas, performáticas e escaláveis com as melhores tecnologias.</p>
+                        <p>Aplicações responsivas e componentizadas utilizando React, TypeScript e tecnologias modernas da web.</p>
                     </div>
                 </div>       
                 <div className={style.tecIcon}>
@@ -72,16 +72,16 @@ return(
                 </div>
                 <div className={style.buletPoints}>
                     <div>
-                        <span>2+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div>
-                        <span>10+</span>
-                        <p>Anos de experiência</p>
-                    </div>
-                    <div>
                         <span>5+</span>
-                        <p>Anos de experiência</p>
+                        <p>Projetos práticos</p>
+                    </div>
+                    <div>
+                        <span>6+</span>
+                        <p>Tecnologias utilizadas</p>
+                    </div>
+                    <div>
+                        <span>3+</span>
+                        <p>Formações em tecnologia</p>
                     </div>
                 </div>
             </div>

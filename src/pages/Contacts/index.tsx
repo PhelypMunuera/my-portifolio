@@ -1,4 +1,4 @@
-import { HiArrowDownTray } from "react-icons/hi2";
+import { BsCloudArrowDownFill } from "react-icons/bs";
 
 import mylogo from '../../assets/mylogo.png'
 import style from './style.module.css'
@@ -29,36 +29,46 @@ return(
                 <p>Se você está procurando um desenvolvedor comprometido, curioso e em constante evolução, entre em contato comigo. Estou disponível para conversar sobre oportunidades, projetos e como posso contribuir com a sua equipe.</p>
             </div>
                            
-            <button onClick={() => navigate('/projetos')} className={style.btnProjects}>
+            <button  onClick={() => navigate('/projetos')} className={style.btnProjects}>
                 Baixe meu curriculo aqui
-                <HiArrowDownTray />
+                <BsCloudArrowDownFill />
             </button>
         </section>
         <article className={style.articleContatcs}>
         <Contatc  
             children={<FaLinkedinIn />}
             title={'LinkedinIn'}
+            text={'https://www.linkedin.com/in/phelypmunuera/'}
             link={'https://www.linkedin.com/in/phelypmunuera/'}
+            
         />
           <Contatc  
             children={<FaGithub />}
             title={'Github'}
+            text={'https://github.com/PhelypMunuera'}
             link={'https://github.com/PhelypMunuera'}
+            
         />
           <Contatc  
             children={<FaInstagram />}
             title={'Instagram'}
+            text={'https://www.instagram.com/phemunuera/' }
             link={'https://www.instagram.com/phemunuera/' }
+           
         />
           <Contatc  
             children={<FaWhatsapp />}
             title={'Whatsapp'}
-            link={'+55 (12) 99118-2882'}
+            text={'+55 (12) 99118-2882'}
+            link={"https://wa.me/5512991182882"}
+           
         />
           <Contatc  
             children={<MdMailOutline />}
             title={'E-mail'}
-            link={'mphelyp@gmail.com'}
+            text={'mphelyp@gmail.com'}
+            link={'mailto:mphelyp@gmail.com'}
+            
         />
         </article>
         
